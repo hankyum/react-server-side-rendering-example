@@ -8,6 +8,9 @@ This is a demonstration of how Server Side Rendering works alongside with ReactJ
 3)  Run the server `npm start`
 4)  Open a browser and go to `http://localhost:3000`
 
+# Demonstration video
+https://www.youtube.com/watch?v=kQ5QeRCxbXA
+
 Hope you enjoy it!
 
 WhitePropmt - Frontend Devs!
