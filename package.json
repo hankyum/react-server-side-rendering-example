@@ -1,0 +1,51 @@
+{
+  "name": "react-ssr",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "private": true,
+  "scripts": {
+    "start": "node server.js",
+    "debug": "node --inspect --debug-brk server.js",
+    "lint": "standard || true",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "clean": "rimraf dist/",
+    "watch-server": "webpack --watch --config webpack/webpack.config.server.js",
+    "watch-client": "webpack --watch --config webpack/webpack.config.client.js",
+    "bundle-server": "webpack --config webpack/webpack.config.server.js",
+    "bundle-client": "webpack --display-modules --config webpack/webpack.config.client.js"
+  },
+  "author": "Martin Quintana",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.15.2",
+    "react": "^15.4.2",
+    "react-dom": "^15.4.2",
+    "react-redux": "^5.0.3",
+    "react-router-dom": "^4.0.0",
+    "redux": "^3.6.0"
+  },
+  "devDependencies": {
+    "babel-core": "^6.23.1",
+    "babel-loader": "^6.4.0",
+    "babel-preset-env": "^1.2.1",
+    "babel-preset-react": "^6.23.0",
+    "babel-preset-stage-2": "^6.22.0",
+    "clean-webpack-plugin": "^0.1.15",
+    "css-loader": "^0.26.2",
+    "file-loader": "^0.10.1",
+    "html-webpack-harddisk-plugin": "^0.1.0",
+    "html-webpack-plugin": "^2.28.0",
+    "isomorphic-style-loader": "^1.1.0",
+    "react-hot-loader": "^3.0.0-beta.6",
+    "standard": "^9.0.1",
+    "style-loader": "^0.13.2",
+    "webpack": "^2.2.1",
+    "webpack-bundle-analyzer": "^2.3.1",
+    "webpack-dev-middleware": "^1.10.1",
+    "webpack-hot-middleware": "^2.17.1",
+    "webpack-hot-server-middleware": "0.0.4",
+    "webpack-merge": "^4.0.0",
+    "webpack-node-externals": "^1.5.4"
+  }
+}
