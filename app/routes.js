@@ -4,6 +4,7 @@ import Header from 'components/Header'
 import Home from 'modules/Home/index.web'
 import About from 'containers/About'
 import Topics from 'containers/Topics'
+import Counter from 'containers/Counter'
 
 const Status = ({ code, children }) => (
   <Route render={({ staticContext }) => {
@@ -32,6 +33,7 @@ export default (
     <Switch>
       <Route exact path='/' component={Home} />
       <Route path='/about' component={About} />
+      <Route path='/counter' component={Counter} />
       <Route path='/:paramId' component={Topics} />
       <Route component={NotFound} />
     </Switch>
