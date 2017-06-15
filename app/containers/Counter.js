@@ -1,6 +1,3 @@
-/**
- * Created by hguo on 3/30/16.
- */
 import React, { Component, PropTypes } from 'react'
 import { connect } from 'react-redux'
 import { decrement, increment, reset, test } from '../redux/actions/counter-actions'
