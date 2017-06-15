@@ -13,7 +13,7 @@ export default function serverRender (stats) {
     const preloadedState = {
       counter: 5,
       test: 2
-    };
+    }
 
     // Create a new Redux store instance
     const store = configureStore(preloadedState)
@@ -33,7 +33,7 @@ export default function serverRender (stats) {
     if (context.url) {
       res.redirect(301, context.url)
     } else {
-      console.log("Server side rendering...");
+      console.log('Server side rendering...')
       // TODO: En vez de leer del disco, usar el compiler para acceder al FS virtual ;)
       readFile(resolve(__dirname, 'template.html'), 'utf8', function (err, file) {
         if (err) return next(err)
